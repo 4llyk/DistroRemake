@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Distrowatch Remake</title>
+</head>
+
+<style>
+body{
+  background-color: #F8F9FA;
+}
+.miolo{
+  background-color: #202020;
+  border-radius: 40px;
+  border: 10px #F8F9FA solid;
+}
+
+.centro{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+  margin: 20px;
+}
+
+#imgdl{
+  height: auto;
+  width: auto;
+  align-self: center;
+  margin-left: 20px;
+}
+
+.titulo{
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="../logo.png" alt="Logo">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 mb-0 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="glossario.html">Glossário</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rankings.html">Rankings</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="miolo">
+
+        <div class="titulo">
+          <h1>Últimas Notícias</h1>
+        </div>
+  
+        <div class="centro">
+
+          <div class="card mb-3" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="imgdl">
+                <img src="../cachyos.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">CachyOS</h5>
+                  <p class="card-text">CachyOS is a Linux distribution based on Arch Linux. It focuses on speed and security optimisations - the default Linux kernel is heavily optimised using the BORE.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <a href="https://cachyos.org/download/" class="btn btn-success">Fazer o Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="imgdl">
+                <img src="../nethsecurity.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">NethSecurity</h5>
+                  <p class="card-text">NethSecurity is a fully-featured open source Linux firewall that streamlines network security deployment in just a few clicks. NethSecurity is a spin-off of the NethServer project.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <a href="https://nethsecurity.org/download" class="btn btn-success">Fazer o Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="centro">
+
+          <div class="card mb-3" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="imgdl">
+                <img src="../redhat.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Red Hat Enterprise Linux</h5>
+                  <p class="card-text">Red Hat Enterprise Linux (RHEL) is a Linux distribution developed by Red Hat and targeted toward the commercial market. Red Hat Enterprise Linux is released in server editions for x86, x86_64</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <a href="https://developers.redhat.com/products/rhel/download" class="btn btn-success">Fazer o Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="imgdl">
+                <img src="../alma.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">AlmaLinux OS</h5>
+                  <p class="card-text">AlmaLinux OS is an open-source, community-driven project that is built from the source code of Red Hat Enterprise Linux (RHEL). AlmaLinux is a completely binary compatible fork of RHEL.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <a href="https://mirrors.almalinux.org/isos/x86_64/9.5.html" class="btn btn-success">Fazer o Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="centro">
+
+          <div class="card mb-3" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="imgdl">
+                <img src="../ghostbsd.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">GhostBSD</h5>
+                  <p class="card-text">GhostBSD is a user-friendly desktop operating system based on FreeBSD. Its default desktop is MATE, but a separate community edition with Xfce is available too.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <a href="https://ghostbsd.org/download/" class="btn btn-success">Fazer o Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="imgdl">
+                <img src="../relianoid.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">RELIANOID</h5>
+                  <p class="card-text">Relianoid is a Debian-based Linux distribution for load balancing. The distribution offers a load balancing oriented operating system for testing, development, and quality assurance environments.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <a href="https://www.relianoid.com/products/community/#downloads" class="btn btn-success">Fazer o Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="centro">
+
+            <div class="card mb-3" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4" id="imgdl">
+                  <img src="../logo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">CachyOS</h5>
+                    <p class="card-text">CachyOS is a Linux distribution based on Arch Linux. It focuses on speed and security optimisations - the default Linux kernel is heavily optimised using the BORE.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="https://cachyos.org/download/" class="btn btn-success">Fazer o Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4" id="imgdl">
+                  <img src="../logo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">NethSecurity</h5>
+                    <p class="card-text">NethSecurity is a fully-featured open source Linux firewall that streamlines network security deployment in just a few clicks. NethSecurity is a spin-off of the NethServer project.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="https://nethsecurity.org/download" class="btn btn-success">Fazer o Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="centro">
+  
+            <div class="card mb-3" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4" id="imgdl">
+                  <img src="../logo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Red Hat Enterprise Linux</h5>
+                    <p class="card-text">Red Hat Enterprise Linux (RHEL) is a Linux distribution developed by Red Hat and targeted toward the commercial market. Red Hat Enterprise Linux is released in server editions for x86, x86_64</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="https://developers.redhat.com/products/rhel/download" class="btn btn-success">Fazer o Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4" id="imgdl">
+                  <img src="../logo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">AlmaLinux OS</h5>
+                    <p class="card-text">AlmaLinux OS is an open-source, community-driven project that is built from the source code of Red Hat Enterprise Linux (RHEL). AlmaLinux is a completely binary compatible fork of RHEL.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="https://mirrors.almalinux.org/isos/x86_64/9.5.html" class="btn btn-success">Fazer o Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="centro">
+  
+            <div class="card mb-3" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4" id="imgdl">
+                  <img src="../logo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">GhostBSD</h5>
+                    <p class="card-text">GhostBSD is a user-friendly desktop operating system based on FreeBSD. Its default desktop is MATE, but a separate community edition with Xfce is available too.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="https://ghostbsd.org/download/" class="btn btn-success">Fazer o Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3" style="max-width: 600px;">
+              <div class="row g-0">
+                <div class="col-md-4" id="imgdl">
+                  <img src="../logo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">RELIANOID</h5>
+                    <p class="card-text">Relianoid is a Debian-based Linux distribution for load balancing. The distribution offers a load balancing oriented operating system for testing, development, and quality assurance environments.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="https://www.relianoid.com/products/community/#downloads" class="btn btn-success">Fazer o Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+      <nav aria-label="Page navigation example" id="pagi">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="bg-light text-dark mt-4">
+        <div class="container py-4 d-flex justify-content-between align-items-center">
+            <!-- Área para a imagem -->
+            <div>
+                <img src="../logo.png" alt="Logo" style="max-width: 120px;">
+            </div>
+            
+            <!-- Links de navegação -->
+            <div>
+                <ul class="list-unstyled mb-0 d-flex flex-column align-items-end">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Sobre</a></li>
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Política de Privacidade</a></li>
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Fale Conosco</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Doe pra nós</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="distro.js"></script>
+</body>
+</html>

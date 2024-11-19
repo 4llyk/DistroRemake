@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>FAQ</title>
+    <style>
+        body {
+            background-color: #F8F9FA;
+        }
+        .miolo {
+            background-color: #202020;
+            border-radius: 40px;
+            border: 10px #F8F9FA solid;
+            padding: 20px;
+        }
+        .titulo {
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .accordion-item {
+            border: none;
+            margin-bottom: 10px;
+        }
+        .accordion-header {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 0;
+        }
+        .accordion-button {
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+            color: #202020;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: #0d6efd;
+        }
+        .accordion-body {
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="../logo.png" alt="Logo">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mb-0 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glossario.html">Glossário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rankings.html">Rankings</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 disabled" type="search" placeholder="Indisponível" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="miolo">
+        <div class="titulo">
+            <h1>FAQ</h1>
+        </div>
+
+        <!-- Accordion para FAQ -->
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        O que é este projeto?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Este projeto é uma aplicação web desenvolvida para fornecer informações e recursos de forma interativa e acessível.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Como posso contribuir?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Você pode contribuir enviando sugestões, reportando bugs ou compartilhando o projeto com outras pessoas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Quem desenvolveu este site?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Este site foi desenvolvido por uma equipe apaixonada por tecnologia, design e inovação.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-dark mt-4">
+        <div class="container py-4 d-flex justify-content-between align-items-center">
+            <!-- Área para a imagem -->
+            <div>
+                <img src="../logo.png" alt="Logo" style="max-width: 120px;">
+            </div>
+            
+            <!-- Links de navegação -->
+            <div>
+                <ul class="list-unstyled mb-0 d-flex flex-column align-items-end">
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Sobre</a></li>
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Política de Privacidade</a></li>
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Fale Conosco</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Doe pra nós</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
