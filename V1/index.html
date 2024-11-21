@@ -44,30 +44,43 @@ body{
 
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <img src="../logo.png" alt="Logo">
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <img src="../logo.png" alt="Logo">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav me-5 mb-0 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="glossario.html">Glossário</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="rankings.html">Rankings</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="glossario.html">Glossário</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rankings.html">Rankings</a>
+                </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+            <form class="d-flex align-items-center">
+                <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+                
+                <!-- Select para filtro -->
+                <select class="form-select me-2" id="filterSelect" aria-label="Filtrar por">
+                    <option selected>Filtrar por...</option>
+                    <option value="dia">Dia</option>
+                    <option value="mes">Mês</option>
+                    <option value="ano">Ano</option>
+                    <option value="distribuicao">Distribuição</option>
+                </select>
+                
+                <!-- Botão de filtro -->
+                <button class="btn btn-outline-success" type="button" id="filterButton">Filtrar</button>
             </form>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
+
 
       <div class="miolo">
 
