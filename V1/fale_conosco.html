@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Páginas de Navegação</title>
+    <style>
+        body {
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+        margin: 0;
+    }
+    .miolo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #202020;
+        border-radius: 40px;
+        border: 10px #F8F9FA solid;
+        padding: 20px;
+        color: white;
+        margin: auto;
+
+        }
+        .titulo {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .feedback-form {
+            max-width: 100vh;
+            width: 100%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feedback-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .feedback-form input, .feedback-form textarea, .feedback-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .feedback-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .feedback-form button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="../logo.png" alt="Logo">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mb-0 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glossario.html">Glossário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rankings.html">Rankings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="miolo">
+        <div class="titulo">
+            <h1>Fale conosco</h1>
+        </div>
+        <div id="conteudo">
+            <form class="feedback-form" action="index.html" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="rating">Rating</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Avaliação</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Bom</option>
+                    <option value="3">3 - Interessante</option>
+                    <option value="2">2 - Chato</option>
+                    <option value="1">1 - Muito Chato</option>
+                </select>
+
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Your feedback here..." required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-light text-dark mt-4">
+        <div class="container py-4 d-flex justify-content-between align-items-center">
+            <div>
+                <img src="../logo.png" alt="Logo" style="max-width: 120px;">
+            </div>
+            <div>
+                <ul class="list-unstyled mb-0 d-flex flex-column align-items-end">
+                    <li class="mb-2"><a href="sobre.html" class="text-dark text-decoration-none">Sobre</a></li>
+                    <li class="mb-2"><a href="politica.html" class="text-dark text-decoration-none">Política de Privacidade</a></li>
+                    <li class="mb-2"><a href="fale_conosco.html" class="text-dark text-decoration-none">Fale Conosco</a></li>
+                    <li><a href="doe.html" class="text-dark text-decoration-none">Doe para nós</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
